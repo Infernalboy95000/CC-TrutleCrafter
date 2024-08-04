@@ -25,10 +25,12 @@ With this, you can deploy turtles as static autocrafters in seconds
 	[Github](https://github.com/SirEdvin/Peripheralium/releases)  
 
 ## Installation
-Links for those who already know how to run and install scripts on computercraft:
-The scripts will tell you what you need but, in doubt, you can continue scrolling.
+Links for those who already know how to run and install scripts on computercraft:  
+The scripts will tell you what you need but, in doubt, you can continue scrolling.  
 [Server script](https://pastebin.com/Xbn0fpKt)  
 [Client script](https://pastebin.com/ZHgSJitZ)
+
+For the client, just click [here](https://github.com/Infernalboy95000/CC-TrutleCrafter/edit/main/README.md#crafter-setup) to get an idea on how it should be set up.
 
 ### Server side
 Place a computer on your minecraft world.  
@@ -86,6 +88,10 @@ You will see the items represented in a crafting table pattern as colors and sym
 Every item name represented by those colors and symbols will be drawn bellow.  
 You will also see what the recipe is making, and how much of it every time.  
 
+For some recipes, you'll see a "#" on the name, that's not a name. That's a tag.  
+This recipe will accept any item that matches the tag.  
+Like the chest recipe, that can accept any type of logs. You can even mix them while crafting!  
+
 Here's the window:  
 ![client_window_2](https://github.com/user-attachments/assets/a94655ae-a62b-4e71-a881-c1ff0f009c9f)
 
@@ -123,6 +129,28 @@ __WARNING__
 The crafting table and the modem on your computer ___both ocupy a side!___
 Fortunately, as long as you don't need to change the recipe, __the modem can be safely removed now!__ freeing it's side for your use
 
+If you did it all correctly, your window should look more like this:  
+![client_window_3_safe](https://github.com/user-attachments/assets/71ad6c72-5e3b-47cd-9a37-a466358aaf48)  
+
+If all it's good, pressing Enter on confirm should let you to the fourth and final window
+
+### Fourth window: Operational crafter window
+
+You did it! Your crafter is running, and will do so as long as nothing stops it.  
+You can remove the modem from now on and the machine will continue it's operation.  
+If you ever need to change the item or the recipe, just put the modem back and the buttons will be available again.  
+You can change the "settings" mid operation. It will prompt you to the [third window](https://github.com/Infernalboy95000/CC-TrutleCrafter/edit/main/README.md#third-window-configure-inputsoutputs).
+If you select "confirm", the crafter will restart and continue with it's new settings.
+If you select "return", the crafter will be unaffectd and continue as normal.
+
+Here's the window:  
+![client_window_4](https://github.com/user-attachments/assets/7f3fbb0b-671a-4304-8b1e-1f3146a273f4)
+
+__Key legend__  
+Arrow up/down keys: (Move the selection from the bottom menu, up or down)  
+Arrow left/right keys: (Move the selection from the bottom menu, on it's sides)  
+Enter key: (Confirm the button selected)  
+
 ## Crafter setup
 
 At the [third window](https://github.com/Infernalboy95000/CC-TrutleCrafter/edit/main/README.md#third-window-configure-inputsoutputs), your client program will be stuck showing errors.  
@@ -138,5 +166,27 @@ These are all the rest of it's sides:
 And here's a crafter setup as an example. This will work if you don't change anything:  
 ![crafter_simple_setup](https://github.com/user-attachments/assets/7da488d4-fbc4-4680-ae61-0f63b01d9aa7)
 
+## Crafter functionality
 
-The Readme is still WIP.
+The crafter grabs the item from the input chest it's asigned to, and leaves it on the output chest until it has enough.  
+_That's why is important to put a filter on the output chest._  
+Once it grabs enough of that item, pulls it onto it's inventory and places them on their corresponding slots.  
+It will do this for every item needed.  
+Once all the items are placed, the crafter will craft the item and, place it on the output chest.  
+
+_Note: The crafter will wait untill the crafted item is no longer on the chest to avoid excesive work on your material system_
+
+If, for whatever reason, the crafter finds strange items, fails to do the recipe or the program restarts, (restarting minecraft restarts the computers too),  
+it will simply dumb the items on the trash chest.
+
+## A message from the developer
+Thank you for reading this far.  
+I really hope you like this program and my work. 
+This isn't reflected in commits, but it took weeks to do this program and leave it at an usable state.  
+
+
+There's an ancient version of this program back when I tried to do this but the recipe registry didn't work at all.  
+If you're interested on it, you can grab it [here](https://pastebin.com/KihJbhZD)  
+I seriously __don't__ recomend it, because you need to edit the json file that represents the recipe you're crafting manually.  
+
+And, with that, all I can say is: Happy crafting.
