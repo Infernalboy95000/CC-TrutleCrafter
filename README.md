@@ -58,15 +58,40 @@ Then, restart the computer. You can press the red button on the left of the comp
 ## Client navigation
 
 Here, you have to move using the arrow keys (No mouse suport, sorry, but the compatibility with metal tier 1 computers was more important)  
-Characters (Write and execute a filter search)  
-Backspace key (Delete a character from your filter search)  
-Arrow left/right keys (Move filter search cursor)  
 
-Arrow up/down keys (Move selection)  
-PageUp/PageDown keys (Previous/Next items page)  
-Home/End keys (Start/End of the items list)  
-Enter key (Confirm item selection and advance to next screen)  
+### First window: Select an item to craft
+
+You will be prompted to select an item to craft from a list.  
+Every item on the list can be crafted on a crafting table and, depending on how many mods you have installed, it can get insanely long!  
+Fortunately, you can search for any item by writting it's name.  
+The program even deals with items that are called the same but are from different mods. Just write this character: _:_
+
+Here's the window:  
 ![client_window_1](https://github.com/user-attachments/assets/8f7a8f4c-8837-4041-93e3-22c74afab2eb)  
 
-Disclaimer: This readme page is still work in progress. More information will be written later.
+__Key legend__  
+Any character key: (Write a name to search. The search will be executed as soon as you stop typing)  
+Backspace key: (Delete a character from your name search bar)  
+Arrow left/right keys: (Move the cursor from your name search bar)  
 
+Arrow up/down keys: (Move item selection)  
+PageUp/PageDown keys: (Previous/Next items page)  
+Home/End keys: (Start/End of the items list)  
+Enter key: (Confirm item selection and advance to next screen)  
+
+### Second window: Select a recipe
+
+If your item has more than one recipe, you will be prompted to select one.  
+You will see the items represented in a crafting table pattern as colors and symbols.  
+Every item name represented by those colors and symbols will be drawn bellow.  
+You will also see what the recipe is making, and how much of it every time.  
+
+Here's the window:  
+![client_window_2](https://github.com/user-attachments/assets/a94655ae-a62b-4e71-a881-c1ff0f009c9f)
+
+
+__Key legend__  
+Arrow left/right keys: (Move the selection from the bar on the bottom)  
+Enter key: (Confirm the button selected on the bottom bar)  
+
+The Readme is still WIP.
