@@ -735,7 +735,7 @@ end
 -----------------------------------
 local protocol = "CRAFTER_CC"
 local modem = {}
-local sendPort = 0
+local sendPort = nil
 
 local maxRetrires = 10
 local timeWait = 3
